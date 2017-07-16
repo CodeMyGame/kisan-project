@@ -1,18 +1,19 @@
 /**
  * Created by Kapil Gehlot on 7/16/2017.
  */
+
 import com.twilio.sdk.TwilioRestClient;
 import com.twilio.sdk.resource.instance.Sms;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static spark.Spark.post;
 import static spark.Spark.get;
+import static spark.Spark.post;
 public class SMSBackend {
     public static void main(String[] args) {
         try {
-            get("/", (req, res) -> "Hello, World!");
+            get("/", (req, res) -> "Helloo, World!");
             TwilioRestClient client = new TwilioRestClient("AC89e62ced39160f9eb7b66d20f5b6683a", "33b59fece9e45c1a780f071b50dcf8ce");
 
             post("/sms", (req, res) -> {
