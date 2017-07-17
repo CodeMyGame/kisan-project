@@ -10,8 +10,8 @@ buildscript {
         classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
     }
 }
-task stage(dependsOn: ['build', 'clean'])
-build.mustRunAfter clean
+//task stage(dependsOn: ['build', 'clean'])
+//build.mustRunAfter clean
 apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'com.github.johnrengelman.shadow'
